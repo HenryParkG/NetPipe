@@ -1,27 +1,22 @@
-# app.py
 import streamlit as st
-import tensorflow as tf
-from tensorflow.keras import layers, models
 
-st.title("TensorFlow CNN Designer GUI")
+# Set the title of the app
+st.title("Welcome to the NetPipe Application")
 
-# 네트워크 구성
-layers_list = []
+# Add a subtitle
+st.subheader("Main Page")
 
-num_layers = st.slider("Number of Conv layers", 1, 5, 2)
-for i in range(num_layers):
-    filters = st.number_input(f"Filters in layer {i+1}", 8, 512, 32)
-    kernel = st.number_input(f"Kernel size for layer {i+1}", 1, 7, 3)
-    layers_list.append((filters, kernel))
+# Add some introductory text
+st.write("""
+This is the main page of the NetPipe application. 
+Use the navigation menu to explore different features of the app.
+""")
 
-# Build model 버튼
-if st.button("Build Model"):
-    model = models.Sequential()
-    model.add(layers.Input(shape=(64,64,3)))
-    for f, k in layers_list:
-        model.add(layers.Conv2D(f, (k,k), activation='relu', padding='same'))
-        model.add(layers.MaxPooling2D((2,2)))
-    model.add(layers.Flatten())
-    model.add(layers.Dense(10, activation='softmax'))
-    
-    st.write(model.summary())
+# Add some additional information
+st.info("This application is designed to help you manage and analyze network pipelines efficiently.")
+
+# Add an example of a metric
+st.metric(label="Active Pipelines", value="5", delta="+2 from last week")
+
+# Add a placeholder for future content
+st.write("More features coming soon!")
