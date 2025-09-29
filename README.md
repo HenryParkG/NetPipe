@@ -26,5 +26,12 @@ NetPipe는 딥러닝 모델을 쉽게 생성, 검증, 학습할 수 있는 파�
 1. GitHub 저장소 클론
 
 ```bash
-git clone https://github.com/사용자명/NetPipe.git
+git clone https://github.com/HenryParkG/NetPipe.git
 cd NetPipe
+python -m venv npvenv
+# Windows
+.\npvenv\Scripts\activate
+# macOS / Linux
+source npvenv/bin/activate
+pip install -r requirements.txt
+streamlit run main.py
