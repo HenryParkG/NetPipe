@@ -3,9 +3,8 @@
 
 # cd to the directory containing this file before running:
 
-# D:
 # cd Desktop\Github\NetPipe
-# .\NetPipe\Scripts\activate
+# .\npvenv\Scripts\activate
 # streamlit run main.py
 
 import streamlit as st
