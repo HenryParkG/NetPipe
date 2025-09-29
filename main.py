@@ -1,3 +1,13 @@
+# This is the main page of the Streamlit application.
+# It provides an overview and navigation to other parts of the app.
+
+# cd to the directory containing this file before running:
+
+# D:
+# cd Desktop\Github\NetPipe
+# .\NetPipe\Scripts\activate
+# streamlit run main.py
+
 import streamlit as st
 
 # Set the title of the app
