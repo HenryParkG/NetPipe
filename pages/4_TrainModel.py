@@ -1,4 +1,5 @@
-# train_yolo_stop.py
+# Streamlit 앱에서 YOLO 모델 학습 및 중지 기능 구현
+from graphviz import Digraph
 import streamlit as st
 from ultralytics import YOLO
 import os
