@@ -1,3 +1,4 @@
+# Description: Custom YOLOv8 Model Builder using latest ultralytics package
 import streamlit as st
 import yaml
 from ultralytics import YOLO

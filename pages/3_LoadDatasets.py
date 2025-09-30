@@ -1,3 +1,4 @@
+# Description: 이미지와 YOLO 라벨 파일을 업로드하고, 그리드 형태로 미리보기
 import streamlit as st
 from PIL import Image, ImageDraw
 import math
