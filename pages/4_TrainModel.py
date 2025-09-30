@@ -85,7 +85,7 @@ def train_yolo():
                 verbose=True
             )
             log_area.text(f"Epoch {epoch+1}/{epochs} finished...")
-
+ 
         model.save(model_save_path)
         log_area.text(f"Training finished!\nSaved at {model_save_path}")
 
